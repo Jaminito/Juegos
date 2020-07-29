@@ -2,7 +2,7 @@ package com.company;
 
 import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
-public class Juego {
+public abstract class Juego {
     private static int record;
     private int vidas;
     private int vidasIniciales;
@@ -35,5 +35,7 @@ public class Juego {
     public int mostrarVidas() {
         return vidas;
     }
+
+    public abstract void Juega();
 
 }

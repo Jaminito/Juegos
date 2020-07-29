@@ -1,23 +1,12 @@
 package com.company;
 
 public class Aplicacion {
-    public static void main(String[] args){
-        Juego juego=new Juego(3);
-        System.out.println(juego.mostrarVidas());
-        juego.quitaVida();
-        System.out.println(juego.mostrarVidas());
-        Juego juego2=new Juego(5);
-        System.out.println(juego2.mostrarVidas());
-        juego2.quitaVida();
-        Juego juego3=new Juego(5);
-        System.out.println(juego3.mostrarVidas());
-        System.out.println(juego2.mostrarVidas());
-
-        juego.quitaVida();
-        System.out.println(juego.mostrarVidas());
-        juego.reiniciarPartida();
-        juego.actualizarRecord();
-        juego2.actualizarRecord();
-
+    public static void main(String[] args) {
+        JuegoAdivinaNumero juego=new JuegoAdivinaNumero(3,5);
+        JuegoAdivinaPar juegoPar=new JuegoAdivinaPar(3,6);
+        JuegoAdivinaImpar juegoImpar=new JuegoAdivinaImpar(3,5);
+        juego.Juega();
+        juegoPar.Juega();
+        juegoImpar.Juega();
     }
 }
