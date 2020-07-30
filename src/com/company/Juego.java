@@ -36,6 +36,5 @@ public abstract class Juego {
         return vidas;
     }
 
-    public abstract void Juega();
 
 }

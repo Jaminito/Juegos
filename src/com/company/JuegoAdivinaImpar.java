@@ -12,4 +12,11 @@ public class JuegoAdivinaImpar extends JuegoAdivinaNumero {
             return false;
         }
     }
+    public void muestraNombre() {
+        System.out.println("Adivina un numero impar");
+    }
+
+    public void muestraInfo() {
+        System.out.println("Tendras "+mostrarVidas()+"intentos para adivinar un numero entre 0 y 10 que sea impar.");
+    }
 }
